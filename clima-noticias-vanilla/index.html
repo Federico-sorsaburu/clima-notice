@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Clima + Noticias</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <h1>Clima + Noticias</h1>
+      <div class="controls">
+        <input id="search" type="search" placeholder="Buscar ciudad..." autocomplete="off"/>
+        <button id="btn-add-fav" title="Agregar a favoritos">⭐</button>
+        <label class="refresh">
+          Auto-refresh
+          <select id="refresh-mins">
+            <option value="0">Off</option>
+            <option value="5">5 min</option>
+            <option value="15" selected>15 min</option>
+            <option value="30">30 min</option>
+          </select>
+        </label>
+      </div>
+      <ul id="suggestions" class="suggestions"></ul>
+    </header>
+
+    <main class="container grid">
+      <aside class="card">
+        <h2>Favoritos</h2>
+        <ul id="favorites" class="favorites"></ul>
+      </aside>
+
+      <section class="card">
+        <h2 id="city-title">Ciudad</h2>
+        <div id="current" class="current"></div>
+        <div id="forecast" class="forecast"></div>
+      </section>
+
+      <section class="card">
+        <h2>Noticias</h2>
+        <ul id="news" class="news"></ul>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <small>Datos: Open‑Meteo & The Guardian • Vanilla JS</small>
+    </footer>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
