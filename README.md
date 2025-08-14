@@ -57,3 +57,6 @@ Puedes utilizar, modificar y compartir el código, siempre que:
 Mantengas el crédito a las fuentes de datos utilizadas.
 
 No lo utilices con fines comerciales sin autorización previa.
+
+Parte de la estructura inicial y algunas optimizaciones fueron realizadas con asistencia de IA (ChatGPT), lo que permitió acelerar el desarrollo y centrarme en la lógica, integración de APIs y diseño final.
+Todo el código fue revisado, adaptado y documentado manualmente.
