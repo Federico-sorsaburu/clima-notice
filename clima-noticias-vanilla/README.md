@@ -1,48 +1,33 @@
+🌦️ Clima + Noticias
 
-# Dashboard de Clima y Noticias (Vanilla JS)
+Aplicación web en JavaScript Vanilla, HTML y CSS que muestra el clima actual y las últimas noticias relacionadas con la ciudad seleccionada.
+Integra datos en tiempo real desde APIs públicas y permite guardar ubicaciones favoritas con actualización automática.
 
-Proyecto 100% **JavaScript + HTML + CSS** (sin frameworks) para tu portafolio.
+🚀 Características
 
-## Features
-- Búsqueda de ciudades con autocompletado (Open‑Meteo Geocoding).
-- Clima actual + próximos días (Open‑Meteo, sin API key).
-- Noticias relacionadas (The Guardian API con `api-key=test` para demo).
-- Favoritos persistidos en `localStorage`.
-- Auto‑refresh configurable (cada X minutos).
-- Manejo de errores con mensajes visibles y reintentos (exponenciales).
-- Estructura modular con ES Modules.
+🔍 Búsqueda de ciudades con autocompletado.
+🌡️ Clima actual y pronóstico de 5 días.
+📰 Noticias recientes sobre la ubicación seleccionada.
+⏱️ Auto-refresh configurable (Off / 5 / 15 / 30 min).
+📱 Interfaz responsive y diseño oscuro por defecto.
+⚠️ Manejo de errores y estados de carga.
+🛠️ Tecnologías usadas JavaScript (ES Modules) HTML5 + CSS3** (Flexbox, Grid) APIs: Open-Meteo → Datos de clima y geocodificación. The Guardian API → Noticias recientes.
 
-## Cómo correrlo
-1. Abri `index.html` con Live Server (VS Code) o un servidor estático simple.
-   - Ejemplo con Python: `python -m http.server 5500` y abrir http://localhost:5500
-2. En `./src/api/news.js` podés cambiar la fuente de noticias por otra API si querés español (GNews, Mediastack, Newsdata), agregando tu API key.
-3. Ajustá el intervalo de refresco en `src/app.js` (const `AUTO_REFRESH_MINUTES`).
+📷 Capturas (Agrega imágenes aquí para mostrar el proyecto)
+📦 Instalación y uso Clonar el repositorio:
 
-## APIs usadas
-- **Open‑Meteo Geocoding**: https://geocoding-api.open-meteo.com
-- **Open‑Meteo Forecast**: https://api.open-meteo.com
-- **The Guardian Content API** (demo): https://content.guardianapis.com (usa `api-key=test`)
+bash Copiar Editar git clone https://github.com/Federico-sorsaburu/clima-notice.git Abrir la carpeta:
 
-> Nota: `api-key=test` de The Guardian sirve para pruebas con límites. Registrate gratis para una key propia si lo vas a publicar.
+cd clima-notice Levantar un servidor local (ejemplo con Python): python -m http.server 5500 Abrir en el navegador: http://localhost:5500 Créditos Este proyecto utiliza datos de fuentes públicas:
 
-## Estructura
-```
-/clima-noticias-vanilla
-  ├── index.html
-  ├── src/
-  │   ├── app.js
-  │   ├── ui.js
-  │   ├── storage.js
-  │   └── api/
-  │       ├── openMeteo.js
-  │       └── news.js
-  └── styles.css
-```
+Open-Meteo – Servicio de datos meteorológicos y geocodificación.
 
-## Tareas sugeridas para el portafolio
-- [ ] Agregar modo oscuro (prefers-color-scheme).
-- [ ] i18n (es/en) para UI.
-- [ ] Tests de utilidades con Vitest (opcional).
-- [ ] Accesibilidad (role, aria-*).
-- [ ] Skeleton loaders y shimmer.
-- [ ] Worker para cache (PWA).
+The Guardian Open Platform – API de noticias recientes.
+
+Los datos mostrados en la aplicación pertenecen a sus respectivos autores y proveedores.
+
+📄 Licencia Este proyecto es de uso libre para fines educativos y de portafolio personal. Puedes utilizar, modificar y compartir el código, siempre que:
+
+Mantengas el crédito a las fuentes de datos utilizadas.
+
+No lo utilices con fines comerciales sin autorización previa.
